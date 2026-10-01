@@ -20,6 +20,9 @@ int main() {
         string ns="";
         
         for(auto x:freq){
+            if(x.second%k!=0){
+                cout<<-1;return 0;
+            }
             int initial=x.second/k;
             has+=x.first;
 
